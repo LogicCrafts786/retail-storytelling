@@ -236,7 +236,7 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 @st.cache_data
 def load_data() -> pd.DataFrame:
     """Load and preprocess the retail dataset."""
-    data_path = Path("data/dataset.csv")
+    data_path = Path("dataset.csv")
     if not data_path.exists():
         st.error("❌ Dataset not found at data/dataset.csv. Please run generate_data.py first.")
         st.stop()
